@@ -12,7 +12,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # ─── CONFIG ────────────────────────────────────────────────────────────
-TOKEN = "COLLE_TON_NOUVEAU_TOKEN_ICI"
+import os
+TOKEN = os.environ.get("TOKEN")
 CHAT_ID = 5446350289
 
 # Session : 01h00 → 05h00
